@@ -1,0 +1,108 @@
+/* src/styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.task-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea, select, button {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+
+input[type="text"], input[type="date"] {
+  border-radius: 5px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.task-list {
+  margin-top: 30px;
+}
+
+.task-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-left: 5px solid #ccc;
+  border-radius: 5px;
+}
+
+.task-item.low {
+  border-left-color: green;
+}
+
+.task-item.medium {
+  border-left-color: yellow;
+}
+
+.task-item.high {
+  border-left-color: red;
+}
+
+.completed {
+  text-decoration: line-through;
+  background-color: #d3ffd3;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.task-management {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.task-list {
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  background: #f9f9f9;
+}
+
+.task-item {
+  background: #ffffff;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.task-search {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
