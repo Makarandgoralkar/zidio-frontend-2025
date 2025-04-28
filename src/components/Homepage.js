@@ -1,24 +1,19 @@
 // 📌 File: src/components/Homepage.js
 import React from "react";
-import { Link } from "react-router-dom"; 
 import "./Homepage.css";
 
 const Homepage = () => {
+
   return (
     <div className="homepage-container">
       <nav className="navbar">
-        <h2 className="logo">Zidio Task Manager</h2>
-        <div className="nav-links">
-          <Link to="/tasks" className="nav-link">Add Task</Link>
-          <Link to="/completed" className="nav-link">Completed</Link>
-          <Link to="/settings" className="nav-link">Settings</Link>
-        </div>
+        <h2>Zidio Task Manager</h2>
       </nav>
 
       <main className="content">
         <h3>Welcome to your Task Manager</h3>
         <p>Manage your tasks efficiently.</p>
-        <button>Add Task +</button>
+        <a href="/tasks"><button className="add-task-btn">+ Add Task</button></a>
       </main>
     </div>
   );
